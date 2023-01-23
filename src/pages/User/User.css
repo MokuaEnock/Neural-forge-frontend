@@ -1,0 +1,26 @@
+#user {
+    height: 45vw;
+    border: thin solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    border: thin solid black;
+    width: 30%;
+    height: 10vw;
+    font-size: 1.3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+form>input {
+    width: 90%;
+    font-size: 1.3vw;
+    border: thin solid black;
+}
