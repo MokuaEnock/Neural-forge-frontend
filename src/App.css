@@ -25,13 +25,14 @@ nav {
   display: flex;
   flex-direction: row;
   font-size: 1.3vw;
-
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 nav * {
-  font-size: 1.3vw;
+  text-decoration: none;
+  color: blue;
+  font-size: 1.5vw;
 }
 
 footer {
