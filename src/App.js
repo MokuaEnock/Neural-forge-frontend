@@ -4,13 +4,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing/Landing";
 import Footer from "./components/Footer";
 import NavBar from "./components/Nav";
-
+import User from "./pages/User/User";
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/user" element={<User />} />
       </Routes>
       <Footer />
     </BrowserRouter>
