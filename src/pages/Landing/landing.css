@@ -20,3 +20,20 @@
     align-items: center;
     justify-content: center;
 }
+
+#landing-container1>h2 {
+    text-align: center;
+    font-size: 2vw;
+    letter-spacing: .1vw;
+}
+
+#landing-container1>p {
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+#landing-container2>button {
+    width: 25%;
+    height: 3.5vw;
+    font-size: 1.3vw;
+}

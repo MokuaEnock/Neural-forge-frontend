@@ -5,13 +5,15 @@ export default function Landing() {
     <main id="landing">
       <div id="landing-container1">
         <h2>
-          No matter the quality or quantity of data we will automate the process
-          for you.
+          No matter the quality or quantity of data we will automate
+          <br />
+          the process for you.
         </h2>
 
         <p>
-          We are focused on foing the heay lifting for you so that you can focus
-          on building your business.
+          We are focused on doing the heavy lifting for you so that you can
+          <br />
+          focus on building your business.
         </p>
       </div>
       <div id="landing-container2">
