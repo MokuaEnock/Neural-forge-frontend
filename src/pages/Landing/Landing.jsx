@@ -18,7 +18,7 @@ export default function Landing() {
         </p>
       </div>
       <div id="landing-container2">
-        <button>Get Started for free</button>
+        <button>Get started for free</button>
 
         <div>
           <h4>Our Partners</h4>
