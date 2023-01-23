@@ -24,3 +24,16 @@ form>input {
     font-size: 1.3vw;
     border: thin solid black;
 }
+
+#user input {
+    margin-top: 1rem;
+}
+
+#user input::file-selector-button {
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    padding: 0.5em;
+    border: thin solid grey;
+    border-radius: 3px;
+}

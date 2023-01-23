@@ -4,9 +4,8 @@ export default function User() {
   return (
     <main id="user">
       <form>
-        <label>Upload your dataset</label>
-        <input type="file" accept=".csv" />
-        <input type="submit" value="Upload" />
+        <label for="avatar">Choose a dataset:</label>
+        <input type="file" name="avatar" accept="image/png, image/jpeg"></input>
       </form>
     </main>
   );
