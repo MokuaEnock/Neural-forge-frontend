@@ -6,7 +6,6 @@ export default function Scrape() {
   let [scrape, setScrape] = useState("");
   let [page, setPage] = useState("");
 
-  
   function handleScrape(e) {
     e.preventDefault();
     console.log("Scrape");
@@ -16,8 +15,18 @@ export default function Scrape() {
     <main id="scrape">
       <form onSubmit={handleScrape}>
         <p>Paste the link to the website</p>
-        <input type="url" placeholder="Paste your link here" />
-        <input type="number" placeholder="Number of pages" />
+        <input
+          type="url"
+          placeholder="Paste your link here"
+          value={scrape}
+          onChange={(e) => setScrape(e.target.value)}
+        />
+        <input
+          type="number"
+          placeholder="Number of pages"
+          value={page}
+          onChange={(e) => setPage(e.target.value)}
+        />
         <button type="submit">Submit</button>
       </form>
     </main>
