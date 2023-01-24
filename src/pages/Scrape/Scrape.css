@@ -1,0 +1,41 @@
+#scrape {
+    height: 45vw;
+    width: 100%;
+    border: thin solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3vw;
+}
+
+#scrape form {
+    height: 30%;
+    width: 45%;
+
+}
+
+#scrape form>input {
+    height: 20%;
+    border: thin solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#scrape form>button {
+    border: thin solid white;
+    width: 90%;
+    height: 30%;
+    font-size: 1.3vw;
+    background-color: blue;
+    color: white;
+
+}
+
+
+input:focus {
+    outline: thin solid transparent;
+}
