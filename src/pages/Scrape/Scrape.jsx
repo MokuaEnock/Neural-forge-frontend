@@ -1,8 +1,12 @@
 import "./Scrape.css";
+import { useState } from "react";
 
 export default function Scrape() {
   // https://www.newegg.com/p/pl?d=laptop&page=2
+  let [scrape, setScrape] = useState("");
+  let [page, setPage] = useState("");
 
+  
   function handleScrape(e) {
     e.preventDefault();
     console.log("Scrape");
