@@ -1,6 +1,8 @@
 import "./Scrape.css";
 
 export default function Scrape() {
+  // https://www.newegg.com/p/pl?d=laptop&page=2
+
   function handleScrape(e) {
     e.preventDefault();
     console.log("Scrape");
