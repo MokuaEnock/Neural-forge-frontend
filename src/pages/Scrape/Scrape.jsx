@@ -8,7 +8,21 @@ export default function Scrape() {
 
   function handleScrape(e) {
     e.preventDefault();
-    console.log("Scrape");
+    console.log(scrape, page);
+
+    fetch("http://localhost:3000/scrape", {
+      method: "POST",
+      body: JSON.stringify({
+        scrape,
+        pages: page,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error(error));
   }
 
   return (
@@ -24,6 +38,7 @@ export default function Scrape() {
         <input
           type="number"
           placeholder="Number of pages"
+          min="0"
           value={page}
           onChange={(e) => setPage(e.target.value)}
         />
