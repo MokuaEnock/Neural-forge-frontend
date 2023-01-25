@@ -3,17 +3,17 @@ import { useState } from "react";
 
 export default function Scrape() {
   // https://www.newegg.com/p/pl?d=laptop&page=2
-  let [scrape, setScrape] = useState("");
+  let [link, setLink] = useState("");
   let [page, setPage] = useState("");
 
   function handleScrape(e) {
     e.preventDefault();
-    console.log(scrape, page);
+    console.log(link, page);
 
-    fetch("http://localhost:3000/scrape", {
+    fetch("http://localhost:3000/scrapes", {
       method: "POST",
       body: JSON.stringify({
-        scrape,
+        link,
         pages: page,
       }),
       headers: {
@@ -32,8 +32,8 @@ export default function Scrape() {
         <input
           type="url"
           placeholder="Paste your link here"
-          value={scrape}
-          onChange={(e) => setScrape(e.target.value)}
+          value={link}
+          onChange={(e) => setLink(e.target.value)}
         />
         <input
           type="number"
