@@ -4,17 +4,17 @@ import { useState } from "react";
 export default function Scrape() {
   // https://www.newegg.com/p/pl?d=laptop&page=2
   let [link, setLink] = useState("");
-  let [page, setPage] = useState("");
+  let [pages, setPages] = useState("");
 
   function handleScrape(e) {
     e.preventDefault();
-    console.log(link, page);
+    console.log(link, pages);
 
     fetch("http://localhost:3000/scrapes", {
       method: "POST",
       body: JSON.stringify({
         link,
-        pages: page,
+        pages,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -39,8 +39,8 @@ export default function Scrape() {
           type="number"
           placeholder="Number of pages"
           min="0"
-          value={page}
-          onChange={(e) => setPage(e.target.value)}
+          value={pages}
+          onChange={(e) => setPages(e.target.value)}
         />
         <button type="submit">Submit</button>
       </form>
