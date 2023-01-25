@@ -1,5 +1,6 @@
 import "./Scrape.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Scrape() {
   // https://www.newegg.com/p/pl?d=laptop&page=2
@@ -26,8 +27,14 @@ export default function Scrape() {
   }
 
   function Header() {
-    return <header>hello world</header>;
+    return (
+      <header>
+        <Link to="/scrape/new">New</Link>
+        <Link to="/scrape/history">History</Link>
+      </header>
+    );
   }
+
   function Empty() {
     return <div></div>;
   }
