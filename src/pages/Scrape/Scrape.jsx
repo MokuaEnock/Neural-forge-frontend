@@ -28,6 +28,9 @@ export default function Scrape() {
   function Header() {
     return <header>hello world</header>;
   }
+  function Empty() {
+    return <div></div>;
+  }
 
   return (
     <main id="scrape">
@@ -49,6 +52,8 @@ export default function Scrape() {
         />
         <button type="submit">Submit</button>
       </form>
+
+      <Empty />
     </main>
   );
 }
