@@ -25,8 +25,13 @@ export default function Scrape() {
       .catch((error) => console.error(error));
   }
 
+  function Header() {
+    return <header>hello world</header>;
+  }
+
   return (
     <main id="scrape">
+      <Header />
       <form onSubmit={handleScrape}>
         <p>Paste the link to the website</p>
         <input
